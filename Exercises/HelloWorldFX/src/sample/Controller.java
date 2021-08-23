@@ -12,13 +12,14 @@ public class Controller {
 
     public Controller() {
     }
+
     @FXML
     private Slider slider;
     @FXML
     private Label label;
 
     @FXML
-    private void actionTest(){
+    private void actionTest() {
         Main m = new Main();
         slider.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
@@ -27,4 +28,5 @@ public class Controller {
             }
         });
 
+    }
 }
