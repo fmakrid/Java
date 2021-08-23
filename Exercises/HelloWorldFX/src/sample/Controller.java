@@ -1,7 +1,6 @@
 package sample;
 
 import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableStringValue;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -21,13 +20,10 @@ public class Controller {
     @FXML
     private void actionTest() {
         Main m = new Main();
-        slider.valueProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> observableValue, Number oldValue, Number newValue) {
-                double firstFilter = (double) newValue;
-                int secondFilter = (int) firstFilter;
-                label.textProperty().setValue(String.valueOf(secondFilter));
-            }
+        slider.valueProperty().addListener((observableValue, oldValue, newValue) -> {
+            double firstFilter = (double) newValue;
+            int secondFilter = (int) firstFilter;
+            label.textProperty().setValue(String.valueOf(secondFilter));
         });
     }
 }
