@@ -6,12 +6,12 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Slider fx:id="slider" layoutX="68.0" layoutY="29.0" minorTickCount="1" onDragDetected="#actionTest" prefHeight="36.0" prefWidth="462.0" showTickMarks="true" />
-            <Label fx:id="label" layoutX="272.0" layoutY="128.0" text="0">
+            <Slider fx:id="slider" layoutX="11.0" layoutY="32.0" minorTickCount="1" onDragDetected="#actionTest" prefHeight="36.0" prefWidth="779.0" showTickMarks="true" />
+            <Label fx:id="label" layoutX="389.0" layoutY="130.0" text="0">
                <font>
                   <Font name="System Bold" size="39.0" />
                </font>
