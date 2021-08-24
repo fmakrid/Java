@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,14 +10,13 @@
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <Slider fx:id="slider" layoutX="11.0" layoutY="32.0" minorTickCount="1" onDragDetected="#actionTest" prefHeight="36.0" prefWidth="779.0" showTickMarks="true" />
-            <Label fx:id="label" layoutX="389.0" layoutY="130.0" text="0">
+            <Slider fx:id="slider" layoutX="11.0" layoutY="32.0" max="366.0" min="1.0" minorTickCount="1" onDragDetected="#actionTest" prefHeight="36.0" prefWidth="779.0" showTickMarks="true" snapToTicks="true" value="1.0" />
+            <Label fx:id="label" alignment="CENTER" layoutX="149.0" layoutY="130.0" prefHeight="56.0" prefWidth="453.0" text="1 - January -2020" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="39.0" />
                </font>
             </Label>
-         </children>
+            <DatePicker fx:id="dater" layoutX="266.0" layoutY="82.0" promptText="Pick a date" showWeekNumbers="true" />
       </AnchorPane>
    </center>
 </BorderPane>
