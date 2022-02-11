@@ -1,2 +1,1 @@
-# Java
-my java repo
+# My projects based in Java
